@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="My Portfolio" />
+    <meta name="keywords" content="website, blog,Portfolio,bio " />
+    <meta name="author" content="DEVELOPER.WK" />
+    <meta name="publisher" content="DEVELOPER.WK" />
+    <meta name="copyright" content="DEVELOPER.WK" />
+    <meta
+      name="description"
+      content="Discover my passion for web development. View my portfolio to see how I bring ideas to life."
+    />
+    <meta name="page-topic" content="portfolio" />
+    <meta name="page-type" content="portfolio" />
+    <meta name="audience" content="Everyone" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/stylesheet.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <script src="js/main.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Desktop Start -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/Developer.WK.png" alt="logo" />
+        </div>
+        <div class="menu">
+          <a href="#" class="bar__icon" onclick="barClick()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <ul>
+            <li>
+              <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
+            </li>
+            <li>
+              <a href="#education"
+                ><i class="fa-solid fa-book-open-reader"></i>Education</a
+              >
+            </li>
+            <li>
+              <a href="#expertise"
+                ><i class="fa-regular fa-star"></i>Expertise</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><i class="fa-solid fa-briefcase"></i>Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#blog"><i class="fa-solid fa-blog"></i>Blog</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-regular fa-envelope"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigation Desktop End -->
+    <!-- Navigation Sidebar Start -->
+    <aside id="mySidebar">
+      <a id="closeBtn" onclick="closeFunction()" href="#">&times</a>
+      <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
+      <a href="#education"
+        ><i class="fa-solid fa-book-open-reader"></i>education</a
+      >
+      <a href="#expertise"><i class="fa-regular fa-star"></i>expertise</a>
+      <a href="#portfolio"><i class="fa-solid fa-briefcase"></i>portfolio</a>
+      <a href="#blog"><i class="fa-solid fa-blog"></i>blog</a>
+      <a href="#contact"><i class="fa-regular fa-envelope"></i>contact</a>
+    </aside>
+    <!-- Navigation Sidebar End -->
+    <!-- Hero Section Start -->
+    <div class="container">
+      <section id="home">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            Hi, I'm <span class="hero__title--name">Developer.WK</span>
+            <img src="img/waving-hand-svgrepo-com.svg" alt="hand" />
+          </h1>
+          <p class="hero__description">
+            I'm a MERN stack developer. I'm passionate with a focus on creating
+            (and occasionally designing) exceptional digital experiences that
+            are fast. accessible, visualy appealing, and responsive, Even though
+            I have been creating web applications for over 2 years, I still love
+            it as if it was something new.
+          </p>
+          <div class="hero__avilable">
+            <p><i class="fa-solid fa-location-dot"></i>Uttara, Dhaka, BD</p>
+            <p><i class="fa-solid fa-circle"></i>Available for hire</p>
+          </div>
+          <ul class="hero__social">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__right">
+          <img
+            src="img/downloadMyImg.png"
+            class="hero__img"
+            alt="My Image"
+     
+          />
+          <div class="hero__img--underlayer"></div>
+        </div>
+      </section>
+    </div>
+    <!-- Hero Section End -->
+  </body>
+</html>

@@ -1,0 +1,50 @@
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    nav {
+      .menu {
+        .bar__icon {
+          display: none;
+        }
+      }
+      ul {
+        li {
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .hero__left {
+      width: 70%;
+      .hero__description {
+        width: 80%;
+      }
+    }
+    .hero__right {
+      width: 30%;
+      .hero__img {
+        width: 280px;
+        &--underlayer {
+          height: 300px;
+          width: 330px;
+          position: absolute;
+          top: 30px;
+          left: -17px;
+          background-color: #2a3341;
+        }
+      }
+    }
+  }
+}

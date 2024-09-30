@@ -1,5 +1,4 @@
 declare var Typed: any;
-
 const closeFunction = () => {
   let close: HTMLElement | null;
   close = document.getElementById("mySidebar");
@@ -33,3 +32,18 @@ const preloader = () => {
   loder!.style.display = "none";
 };
 window!.addEventListener("load", preloader);
+let scrollButton = document.getElementById("scrollBtn") as HTMLElement;
+
+window.onscroll = (): void => topBtnFunction();
+const topBtnFunction = (): void => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+};
+
+const scrollTopFunction = (): void => {
+  document.body.scrollTop = 0; //Safari
+  document.documentElement.scrollTop = 0; //Chrome And Others
+};

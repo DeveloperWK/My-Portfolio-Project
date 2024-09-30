@@ -78,4 +78,44 @@
       }
     }
   }
+  .portfolio__container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    .portfolio__box {
+      width: 30% !important;
+    }
+  }
+  #blog {
+    .blog__container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      .blog__box {
+        width: 30% !important;
+      }
+    }
+  }
+  #contact {
+    .contact__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+
+      .contact__content {
+        width: 40%;
+        margin-top: 3.5rem;
+      }
+      .contact__form {
+        width: 50%;
+      }
+    }
+    form {
+      h1 {
+        width: 50% !important;
+      }
+    }
+  }
 }

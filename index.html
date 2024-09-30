@@ -24,6 +24,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/portfolio-folder.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/stylesheet.min.css" />
     <link rel="stylesheet" href="css/responsive.min.css" />
     <script src="js/main.js" defer></script>
@@ -40,9 +49,13 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="img/Developer.WK.png" alt="logo" />
+          <img
+            src="img/Developer.WK.png"
+            alt="logo"
+            class="animate__animated animate__pulse animate__infinite infinite"
+          />
         </div>
-        <div class="menu">
+        <div class="menu animate__animated animate__slideInRight">
           <a href="#" class="bar__icon" onclick="barClick()"
             ><i class="fa-solid fa-bars"></i
           ></a>
@@ -78,7 +91,7 @@
     <!-- Navigation Desktop End -->
     <!-- Navigation Sidebar Start -->
     <aside id="mySidebar">
-      <a id="closeBtn" onclick="closeFunction()" href="#">&times</a>
+      <a id="closeBtn" onclick="closeFunction()">&times</a>
       <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
       <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
       <a href="#expertise"><i class="fa-regular fa-star"></i>expertise</a>
@@ -88,9 +101,14 @@
     </aside>
     <!-- Navigation Sidebar End -->
     <!-- Hero Section Start -->
+    <!-- Top Btn -->
+    <button onclick="scrollTopFunction()" id="scrollBtn" title="Go to top">
+      Top
+    </button>
+    <!-- Top Btn -->
     <div class="container">
       <section id="home">
-        <div class="hero__left">
+        <div class="hero__left animate__animated animate__slideInLeft">
           <h1 class="hero__title">
             Hi, I'm <span class="hero__title--name">Developer.WK</span>
             <img src="img/waving-hand-svgrepo-com.svg" alt="hand" />
@@ -119,9 +137,14 @@
             <li>
               <a href="#"><i class="fa-brands fa-github"></i>Github.</a>
             </li>
+            <li>
+              <a href="https://www.linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i>Linkedin.</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="hero__right">
+        <div class="hero__right animate__animated animate__slideInRight">
           <img
             src="img/downloadMyImg.png"
             class="hero__img"
@@ -134,10 +157,10 @@
     </div>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <div class="container">
-    <div class="about__title--bg">
+    <div class="container animate__animated animate__zoomIn animate__delay-1s">
+      <div class="about__title--bg">
         <h1 class="about__title">About Me</h1>
-    </div>
+      </div>
       <section id="about">
         <div class="about__left">
           <img
@@ -196,5 +219,340 @@
       </section>
     </div>
     <!-- About Section End -->
+    <!-- Expertise Section Start -->
+    <div
+      class="container animate__animated animate__slideInDown animate__delay-2s"
+    >
+      <section id="expertise">
+        <h1 class="expertise__title">Expertise</h1>
+        <p class="expertise__text"></p>
+        <div class="skills">
+          <figure>
+            <img src="img/html.png" alt="HTML" />
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src="img/css.png" alt="HTML" />
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="img/js.png" alt="HTML" />
+            <figcaption>js</figcaption>
+          </figure>
+          <figure>
+            <img src="img/ts.png" alt="HTML" />
+            <figcaption>typescript</figcaption>
+          </figure>
+          <figure>
+            <img src="img/tailwind.png" alt="HTML" />
+            <figcaption>tailwind css</figcaption>
+          </figure>
+          <figure>
+            <img src="img/scss.png" alt="HTML" />
+            <figcaption>sass,scss</figcaption>
+          </figure>
+          <figure>
+            <img src="img/node.png" alt="HTML" />
+            <figcaption>node.js</figcaption>
+          </figure>
+          <figure>
+            <img src="img/express.png" alt="HTML" />
+            <figcaption>express.js</figcaption>
+          </figure>
+          <figure>
+            <img src="img/mongo.png" alt="HTML" />
+            <figcaption>mongo db</figcaption>
+          </figure>
+          <figure>
+            <img src="img/react.png" alt="HTML" />
+            <figcaption>react.js</figcaption>
+          </figure>
+          <figure>
+            <img src="img/bootstrap.png" alt="HTML" />
+            <figcaption>bootstrap</figcaption>
+          </figure>
+          <figure>
+            <img src="img/git.png" alt="HTML" />
+            <figcaption>Git</figcaption>
+          </figure>
+          <figure>
+            <img src="img/figma.png" alt="HTML" />
+            <figcaption>figma</figcaption>
+          </figure>
+          <figure>
+            <img src="img/socketio.png" alt="HTML" />
+            <figcaption>socket.io</figcaption>
+          </figure>
+          <figure>
+            <img src="img/next.png" alt="HTML" />
+            <figcaption>next.js</figcaption>
+          </figure>
+          <figure>
+            <img src="img/sql.png" alt="HTML" />
+            <figcaption>my sql</figcaption>
+          </figure>
+          <figure>
+            <img src="img/github.webp" alt="HTML" />
+            <figcaption>Github</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+    <!-- Expertise Section End -->
+    <!-- portfolio section start -->
+    <div
+      class="container animate__animated animate__slideInUp animate__delay-4s"
+    >
+      <section id="portfolio">
+        <h1 class="portfolio__title">Work</h1>
+        <p class="portfolio__text">
+          Some of the noteworthy projects I have built:
+        </p>
+        <div class="portfolio__container">
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/text.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Text To Speech.</h1>
+              <a href="https://developerwk.com/text_to_speech/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/age.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Age Calculator.</h1>
+              <a href="https://developerwk.com/age_calculator/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/code.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Code Editor.</h1>
+              <a href="https://developerwk.com/codeEditor/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/tic_tac_toe.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Tic Tac Toe.</h1>
+              <a href="https://developerwk.com/tic_tac_toe/" target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/country.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Country Data Browser.</h1>
+              <a
+                href="https://developerwk.com/mern/CountryDataBrowser/"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__box--img">
+              <img src="img/car.png" alt="portfolio" />
+            </div>
+            <div class="portfolio__box--content">
+              <h1>Car Brand Website.</h1>
+              <a
+                href="https://developerwk.com/mern/flex_task_car/"
+                target="_blank"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- portfolio section end -->
+    <!-- Blog Section Start -->
+    <div
+      class="container animate__animated animate__heartBeat animate__delay-5s"
+    >
+      <section id="blog">
+        <h1 class="blog__title">Blog</h1>
+        <div class="blog__container">
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+          <div class="blog__box">
+            <div class="blog__box--img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUNmv5o3RyxrDChISZvqb5fG9nxsTQVTxPg&s"
+                alt="Blog"
+              />
+            </div>
+            <div class="blog__box--content">
+              <h1>What is Web Development?</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores nemo doloremque dignissimos, eaque corporis dolore
+                ratione numquam rerum voluptatibus, voluptatum sit! Libero
+                placeat ipsa officia dolorum debitis, accusamus eveniet esse.
+              </p>
+              <button type="button" class="btn__blog">Read More...</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Blog Section End -->
+    <!-- Contact Section Start -->
+    <div class="container animate__animated animate__backInDown">
+      <section id="contact">
+        <div class="contact__title">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="contact__container">
+          <div class="contact__content">
+            <a href="tel:"><span>Call Me: </span>+880123456789</a>
+            <a href="mailto:wasifulkabir2023@gmail.com"
+              ><span>Mail Me: </span>wasifulkabir2023@gmail.com</a
+            >
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="contact__form">
+            <form>
+              <h1>Get In Touch</h1>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Contact Section End -->
+    <!-- Footer Section Start -->
+    <footer class="container">
+      <p>
+        © 2024 Developer.WK All rights reserved | Designed & Developed by
+        <span class="footer__name"> Developer.WK (Wasiful Kabir)</span>
+      </p>
+    </footer>
+    <!-- Footer Section End -->
   </body>
 </html>

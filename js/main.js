@@ -28,3 +28,17 @@ var preloader = function () {
     loder.style.display = "none";
 };
 window.addEventListener("load", preloader);
+var scrollButton = document.getElementById("scrollBtn");
+window.onscroll = function () { return topBtnFunction(); };
+var topBtnFunction = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = "block";
+    }
+    else {
+        scrollButton.style.display = "none";
+    }
+};
+var scrollTopFunction = function () {
+    document.body.scrollTop = 0; //Safari
+    document.documentElement.scrollTop = 0; //Chrome And Others
+};

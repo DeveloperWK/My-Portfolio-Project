@@ -27,9 +27,15 @@
     <link rel="stylesheet" href="css/stylesheet.min.css" />
     <link rel="stylesheet" href="css/responsive.min.css" />
     <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <title>My Portfolio</title>
   </head>
   <body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <img src="img/loder.gif" alt="preloader" />
+    </div>
+    <!-- Preloader End -->
     <!-- Navigation Desktop Start -->
     <header>
       <nav>
@@ -46,11 +52,6 @@
             </li>
             <li>
               <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
-            </li>
-            <li>
-              <a href="#education"
-                ><i class="fa-solid fa-book-open-reader"></i>Education</a
-              >
             </li>
             <li>
               <a href="#expertise"
@@ -80,9 +81,6 @@
       <a id="closeBtn" onclick="closeFunction()" href="#">&times</a>
       <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
       <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
-      <a href="#education"
-        ><i class="fa-solid fa-book-open-reader"></i>education</a
-      >
       <a href="#expertise"><i class="fa-regular fa-star"></i>expertise</a>
       <a href="#portfolio"><i class="fa-solid fa-briefcase"></i>portfolio</a>
       <a href="#blog"><i class="fa-solid fa-blog"></i>blog</a>
@@ -97,6 +95,9 @@
             Hi, I'm <span class="hero__title--name">Developer.WK</span>
             <img src="img/waving-hand-svgrepo-com.svg" alt="hand" />
           </h1>
+          <h2 class="my__expertise">
+            I am a <span class="my__expertise--typed typing">Developer</span>
+          </h2>
           <p class="hero__description">
             I'm a MERN stack developer. I'm passionate with a focus on creating
             (and occasionally designing) exceptional digital experiences that
@@ -105,18 +106,18 @@
             it as if it was something new.
           </p>
           <div class="hero__avilable">
-            <p><i class="fa-solid fa-location-dot"></i>Uttara, Dhaka, BD</p>
-            <p><i class="fa-solid fa-circle"></i>Available for hire</p>
+            <p><i class="fa-solid fa-location-dot"></i>Uttara, Dhaka, BD.</p>
+            <p><i class="fa-solid fa-circle"></i>Available for Hire.</p>
           </div>
           <ul class="hero__social">
             <li>
-              <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+              <a href="#"><i class="fa-brands fa-facebook"></i>Facebook.</a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
+              <a href="#"><i class="fa-brands fa-youtube"></i>Youtube.</a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+              <a href="#"><i class="fa-brands fa-github"></i>Github.</a>
             </li>
           </ul>
         </div>
@@ -125,12 +126,75 @@
             src="img/downloadMyImg.png"
             class="hero__img"
             alt="My Image"
-     
+            title="Developer.WK"
           />
           <div class="hero__img--underlayer"></div>
         </div>
       </section>
     </div>
     <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <div class="container">
+    <div class="about__title--bg">
+        <h1 class="about__title">About Me</h1>
+    </div>
+      <section id="about">
+        <div class="about__left">
+          <img
+            src="img/about.png"
+            class="about__img"
+            alt="My Image"
+            title="Developer.WK"
+          />
+          <div class="about__img--underlayer"></div>
+        </div>
+        <div class="about__right">
+          <h1 class="about__right--title">
+            Curious about me? Here you have it:
+          </h1>
+          <p class="about__right--description">
+            I'm a passionate. self-proclaimed designer who specializes in MERN
+            stack. I love to build and design. I have been working with MERN. I
+            am very enthusiastic about bringing the technical and visual aspects
+            of digital products to life. user experience, pixel perfect design,
+            and writing Clear, readable, highly performant code matters to me.
+          </p>
+          <p class="about__right--description">
+            I began my journey as a web developer in 2019, and since then. I've
+            continued to grow and evolve as a developer, taking on new
+            Challenges and learning the latest technologies along the way, Now,
+            in my thirties, 5 years after starting my web development journey.
+            I'm building cutting-edge web applications using modern technologies
+            such as Next.js, TypeScript, Nestis, Tailwindcss, Supaöase and much
+            more.
+          </p>
+          <p class="about__right--description">
+            I am very much a progressive thinker and enjoy working on products
+            end to end, from ideation all the way to development.
+          </p>
+          <p class="about__right--description">
+            When I'm not in full-on developer mode, you can find me hovering
+            around on mail, witnessing the journey Of early startups or enjoying
+            some free time. You can follow me on Twitter where I share tech-
+            related bites and buibd in public, or you can follow me on GitHub.
+          </p>
+          <p class="about__right--description">
+            Finally, Here are my educational background.
+          </p>
+          <div class="education">
+            <ul>
+              <li><span>I passed my S.S.C from UCS in 2020.</span></li>
+              <li><span>I passed my H.S.C from GMUSC in 2022.</span></li>
+              <li><span>I am currently pursuing B.B.A in MANAGEMENT.</span></li>
+            </ul>
+          </div>
+          <p class="about__right--description">
+            One last thing, I'm available for freelance work, so feel free to
+            reach out and say hello! I promise I don't bite 😃
+          </p>
+        </div>
+      </section>
+    </div>
+    <!-- About Section End -->
   </body>
 </html>

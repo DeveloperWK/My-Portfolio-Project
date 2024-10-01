@@ -609,6 +609,18 @@ header {
 }
 
 // !! Contact End
+// WhatsApp Start
+.whatsApp {
+  position: fixed;
+  right: 2rem;
+  bottom: 5rem;
+  z-index: 999;
+  img {
+    width: 0;
+    cursor: pointer;
+  }
+}
+// WhatsApp End
 // !! Footer Start
 footer {
   background-color: #111827;

@@ -208,7 +208,12 @@ header {
     }
   }
 }
-
+#subtitle {
+  color: crimson;
+  line-height: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 // !! Hero End
 // * Preloader Start
 .preloader {

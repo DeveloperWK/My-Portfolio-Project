@@ -47,3 +47,11 @@ const scrollTopFunction = (): void => {
   document.body.scrollTop = 0; //Safari
   document.documentElement.scrollTop = 0; //Chrome And Others
 };
+
+const whatsAppImg = document.querySelector<HTMLElement>("#whatsappImg");
+window!.addEventListener("load", function () {
+  this.setTimeout(function () {
+    whatsAppImg!.style.width = "10rem";
+    whatsAppImg!.style.transition = "width 0.5s";
+  }, 2000);
+});

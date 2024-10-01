@@ -42,3 +42,10 @@ var scrollTopFunction = function () {
     document.body.scrollTop = 0; //Safari
     document.documentElement.scrollTop = 0; //Chrome And Others
 };
+var whatsAppImg = document.querySelector("#whatsappImg");
+window.addEventListener("load", function () {
+    this.setTimeout(function () {
+        whatsAppImg.style.width = "10rem";
+        whatsAppImg.style.transition = "width 0.5s";
+    }, 2000);
+});
